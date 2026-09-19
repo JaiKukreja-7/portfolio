@@ -1,3 +1,4 @@
+import { About } from "@/components/about";
 import { Hero } from "@/components/hero";
 
 export default function Home() {
@@ -5,11 +6,10 @@ export default function Home() {
     <main className="flex flex-col">
       <Hero />
 
+      <About />
+
       {/* Temporary anchors so the nav / hero CTAs have targets.
           Replaced by real sections in later build steps. */}
-      <section id="about" className="min-h-[60vh] px-6 py-24">
-        <span className="section-label">[ 01 — ABOUT ]</span>
-      </section>
       <section id="expertise" className="min-h-[60vh] px-6 py-24">
         <span className="section-label">[ 02 — EXPERTISE ]</span>
       </section>

@@ -4,7 +4,18 @@ export const site = {
   initials: "JK",
   tagline: "Computer Engineering student building full-stack & frontend products",
   email: "jaikukreja1403@gmail.com",
+  location: "Mumbai, India",
+  college: "Thadomal Shahani Engineering College (TSEC)",
   yearShort: "3rd Year",
+  year: "3rd Year, Computer Engineering",
+  // TODO: replace with the real resume PDF (e.g. "/resume.pdf") once ready.
+  resumeUrl: "#",
+  // Drop the real portrait at public/images/profile.jpg (portrait orientation, ~800x1000).
+  photo: {
+    src: "/images/profile.jpg",
+    alt: "Jai Kukreja, Computer Engineering student at TSEC Mumbai",
+  },
+  bio: "Computer Engineering student at Thadomal Shahani Engineering College (TSEC), Mumbai, currently in my third year. I build full-stack web products end-to-end — from UI to backend — and I'm actively looking for frontend and full-stack development internships.",
   socials: {
     github: "https://github.com/JaiKukreja-7",
     linkedin: "https://www.linkedin.com/in/jai-kukreja-b06716244",

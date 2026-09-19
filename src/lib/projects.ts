@@ -28,9 +28,9 @@ export const projects: readonly Project[] = [
       "AI mock interview platform. Dynamic AI question generation, ATS resume analyser, performance analytics dashboard, and a real company question bank.",
     tags: ["Next.js", "TypeScript", "Tailwind", "Supabase", "Grok API", "Framer Motion"],
     images: [
-      { src: "/images/projects/mockprep-1.png", alt: "MockPrep — dashboard" },
-      { src: "/images/projects/mockprep-2.png", alt: "MockPrep — live interview session" },
-      { src: "/images/projects/mockprep-3.png", alt: "MockPrep — performance analytics" },
+      { src: "/images/projects/mockprep-1.png", alt: "MockPrep dashboard" },
+      { src: "/images/projects/mockprep-2.png", alt: "MockPrep live interview session" },
+      { src: "/images/projects/mockprep-3.png", alt: "MockPrep performance analytics" },
     ],
     accent: "bg-yellow",
     featured: true,
@@ -55,7 +55,7 @@ export const projects: readonly Project[] = [
     description:
       "AI-powered automatic block planning system for Indian Railways, built for Smart India Hackathon 2026.",
     links: { github: "https://github.com/divvyesk/blockpilot" },
-    images: [{ src: "/images/projects/blockpilot-preview.png", alt: "BlockPilot — block planner view" }],
+    images: [{ src: "/images/projects/blockpilot-preview.png", alt: "BlockPilot block planner view" }],
     accent: "bg-lime",
   },
   {

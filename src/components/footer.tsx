@@ -9,7 +9,7 @@ export function Footer() {
         <div className="flex flex-col items-center gap-3 md:flex-row md:gap-4">
           <a
             href="#hero"
-            aria-label={`${site.name} — back to top`}
+            aria-label={`${site.name}, back to top`}
             className="brutal-border flex size-9 shrink-0 items-center justify-center bg-yellow font-display text-sm font-bold shadow-brutal-sm"
           >
             {site.initials}

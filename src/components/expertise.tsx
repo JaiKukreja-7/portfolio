@@ -28,13 +28,13 @@ const areas: Area[] = [
       "Building end-to-end web apps with modern JS frameworks, from database design to responsive UI.",
     accent: "bg-yellow",
     widget: {
-      title: "dev — npm run dev",
+      title: "dev: npm run dev",
       lines: lines(
         <><G>$</G> npm run dev</>,
         <><M>db   ▸</M> <Status label="connected" /></>,
         <><M>api  ▸</M> <Status label="listening :3000" /></>,
         <><M>ui   ▸</M> <Status label="hydrated" /></>,
-        <><Y>✓</Y> ready — full stack up</>,
+        <><Y>✓</Y> ready: full stack up</>,
       ),
     },
   },
@@ -59,7 +59,7 @@ const areas: Area[] = [
     description: "Building apps that use AI/ML APIs for real product features.",
     accent: "bg-violet",
     widget: {
-      title: "ai — scan.ts",
+      title: "ai: scan.ts",
       lines: lines(
         <><G>&gt;</G> <C>await</C> analyze(<G>&quot;label.jpg&quot;</G>)</>,
         <><M>→ extracting ingredients…</M></>,
@@ -73,14 +73,14 @@ const areas: Area[] = [
     description: "Collaborative builds under deadline (SIH-style hackathon projects).",
     accent: "bg-lime",
     widget: {
-      title: "git — log --graph",
+      title: "git: log --graph",
       lines: lines(
         <><G>$</G> git log --oneline --graph</>,
         <><Y>*</Y>   <M>merge</M> feature/planner → main</>,
         <><M>|\</M>  </>,
         <><M>|</M> <C>*</C> <M>feat:</M> block scheduling ui</>,
         <><C>*</C> <M>|</M> <M>feat:</M> conflict detection api</>,
-        <><M>|/</M>  <Status label="ship it — 36h deadline" color="bg-coral" /></>,
+        <><M>|/</M>  <Status label="ship it, 36h deadline" color="bg-coral" /></>,
       ),
     },
   },

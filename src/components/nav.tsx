@@ -81,7 +81,7 @@ export function Nav() {
         {/* Wordmark */}
         <a
           href="#hero"
-          aria-label={`${site.name} — back to top`}
+          aria-label={`${site.name}, back to top`}
           className="brutal-border brutal-press flex size-9 items-center justify-center bg-yellow font-display text-sm font-bold shadow-brutal-sm"
         >
           {site.initials}

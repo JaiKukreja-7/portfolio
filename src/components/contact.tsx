@@ -10,7 +10,7 @@ export function Contact() {
         <Reveal className="flex flex-col gap-6">
           <SectionHeading number="05" label="Contact" title="Let's Talk" />
           <p className="max-w-prose text-lg text-ink-2 sm:text-xl">
-            Open to frontend and full-stack internship opportunities — reach out, I reply fast.
+            Open to frontend and full-stack internship opportunities. Reach out, I reply fast.
           </p>
         </Reveal>
 

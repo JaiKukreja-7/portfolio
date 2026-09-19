@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "700"],
 });
 
-const title = "Jai Kukreja — Full-Stack Developer";
+const title = "Jai Kukreja | Full-Stack Developer";
 const description =
   "Computer Engineering student at TSEC Mumbai building full-stack & frontend products. Open to internships.";
 

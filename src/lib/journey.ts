@@ -14,7 +14,7 @@ export const journey: readonly JourneyEntry[] = [
     time: "2026",
     title: "Smart India Hackathon 2026",
     description:
-      "Competing across three team problem statements — an AI railway block planner, a title verification system for PRGI, and VeriBid AI for CPCL/MoPNG.",
+      "Competing across three team problem statements: an AI railway block planner, a title verification system for PRGI, and VeriBid AI for CPCL/MoPNG.",
     projects: ["BlockPilot", "PRGI TitleGuard", "VeriBid AI"],
     status: "milestone",
     accent: "bg-yellow",

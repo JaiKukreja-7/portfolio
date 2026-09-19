@@ -13,7 +13,7 @@ export function SectionHeading({
   return (
     <div className={`flex flex-col gap-3 ${className}`}>
       <span className="section-label">
-        [ {number} — {label} ]
+        [ {number} / {label} ]
       </span>
       <h2 className="font-display text-4xl font-bold sm:text-5xl md:text-6xl">
         {title}

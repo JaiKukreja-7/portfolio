@@ -54,6 +54,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Keep anchor targets clear of the fixed nav bar */
+    scroll-padding-top: 6rem;
   }
 
   body {

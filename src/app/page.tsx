@@ -1,6 +1,7 @@
 import { About } from "@/components/about";
 import { Expertise } from "@/components/expertise";
 import { Hero } from "@/components/hero";
+import { Projects } from "@/components/projects";
 
 export default function Home() {
   return (
@@ -9,12 +10,10 @@ export default function Home() {
 
       <About />
       <Expertise />
+      <Projects />
 
       {/* Temporary anchors so the nav / hero CTAs have targets.
           Replaced by real sections in later build steps. */}
-      <section id="projects" className="min-h-[60vh] px-6 py-24">
-        <span className="section-label">[ 03 — PROJECTS ]</span>
-      </section>
       <section id="experience" className="min-h-[60vh] px-6 py-24">
         <span className="section-label">[ 04 — EXPERIENCE ]</span>
       </section>

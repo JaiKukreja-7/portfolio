@@ -29,7 +29,7 @@
   --color-term-2: #1c1c1c;
   --color-term-border: #2e2e2e;
   --color-term-fg: #e6e6e6;
-  --color-term-muted: #8a8a8a;
+  --color-term-muted: #9a9a9a;
   --color-term-green: #5ef287;
   --color-term-yellow: #ffd93d;
   --color-term-cyan: #6ee7f0;
@@ -85,6 +85,12 @@
   ::selection {
     background-color: var(--color-yellow);
     color: var(--color-ink);
+  }
+
+  /* Keyboard focus: thick offset ring instead of the browser default */
+  :focus-visible {
+    outline: 3px solid var(--color-ink);
+    outline-offset: 3px;
   }
 }
 

@@ -36,6 +36,12 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <a
+          href="#hero"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:border-[3px] focus:border-ink focus:bg-yellow focus:px-4 focus:py-2 focus:font-bold"
+        >
+          Skip to content
+        </a>
         <Nav />
         {children}
         <CustomCursor />

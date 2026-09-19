@@ -26,6 +26,8 @@ export function About() {
           <div>
             <a
               href={site.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="brutal-border brutal-press inline-flex items-center gap-2 bg-coral px-6 py-3 font-display text-base font-bold shadow-brutal"
             >
               <ArrowDownIcon width={18} height={18} />

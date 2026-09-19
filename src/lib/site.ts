@@ -8,8 +8,8 @@ export const site = {
   college: "Thadomal Shahani Engineering College (TSEC)",
   yearShort: "3rd Year",
   year: "3rd Year, Computer Engineering",
-  // TODO: replace with the real resume PDF (e.g. "/resume.pdf") once ready.
-  resumeUrl: "#",
+  // Served from public/resume.pdf — replace that file to update the CV.
+  resumeUrl: "/resume.pdf",
   // Drop the real portrait at public/images/profile.jpg (portrait orientation, ~800x1000).
   photo: {
     src: "/images/profile.jpg",

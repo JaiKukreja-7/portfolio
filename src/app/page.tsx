@@ -1,5 +1,7 @@
 import { About } from "@/components/about";
+import { Contact } from "@/components/contact";
 import { Expertise } from "@/components/expertise";
+import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { Journey } from "@/components/journey";
 import { Projects } from "@/components/projects";
@@ -13,11 +15,8 @@ export default function Home() {
       <Expertise />
       <Projects />
       <Journey />
-
-      {/* Temporary anchor so the nav / hero CTAs have a target. Replaced in step 7. */}
-      <section id="contact" className="min-h-[60vh] px-6 py-24">
-        <span className="section-label">[ 06 — CONTACT ]</span>
-      </section>
+      <Contact />
+      <Footer />
     </main>
   );
 }

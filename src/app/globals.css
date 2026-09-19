@@ -1,26 +1,110 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ------------------------------------------------------------------
+   Design tokens — neobrutalist palette (own palette, not the reference's)
+   ------------------------------------------------------------------ */
+@theme {
+  /* Fonts (populated by next/font CSS variables in layout.tsx) */
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Surfaces */
+  --color-paper: #f6f1e7;      /* warm off-white page background */
+  --color-paper-2: #ede6d6;    /* slightly darker paper for alternating bands */
+  --color-ink: #111111;        /* borders, text, shadows */
+  --color-ink-2: #3d3a34;      /* secondary text */
+  --color-ink-3: #7a756b;      /* muted text */
+  --color-white: #ffffff;
+
+  /* Accents — flat, saturated, used as card fills and highlights */
+  --color-yellow: #ffd93d;
+  --color-coral: #ff6b6b;
+  --color-lime: #c8f04b;
+  --color-sky: #7dd3fc;
+  --color-violet: #b794f6;
+
+  /* Terminal-style dark cards (Expertise widgets) */
+  --color-term: #0f0f0f;
+  --color-term-2: #1c1c1c;
+  --color-term-border: #2e2e2e;
+  --color-term-fg: #e6e6e6;
+  --color-term-muted: #8a8a8a;
+  --color-term-green: #5ef287;
+  --color-term-yellow: #ffd93d;
+  --color-term-cyan: #6ee7f0;
+  --color-term-pink: #ff7ab6;
+
+  /* Hard offset shadows — no blur */
+  --shadow-brutal-sm: 2px 2px 0 0 var(--color-ink);
+  --shadow-brutal: 4px 4px 0 0 var(--color-ink);
+  --shadow-brutal-lg: 8px 8px 0 0 var(--color-ink);
+  --shadow-brutal-xl: 12px 12px 0 0 var(--color-ink);
+
+  /* Border widths */
+  --border-width-brutal: 3px;
+
+  /* Corners — mostly square, tiny radius for pills */
+  --radius-brutal: 4px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ------------------------------------------------------------------
+   Base
+   ------------------------------------------------------------------ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background-color: var(--color-yellow);
+    color: var(--color-ink);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ------------------------------------------------------------------
+   Reusable neobrutalist primitives
+   ------------------------------------------------------------------ */
+@utility brutal-border {
+  border: var(--border-width-brutal) solid var(--color-ink);
+}
+
+@utility brutal-card {
+  border: var(--border-width-brutal) solid var(--color-ink);
+  box-shadow: var(--shadow-brutal);
+  background-color: var(--color-white);
+}
+
+/* Interactive: lifts on hover, presses flat on active */
+@utility brutal-press {
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: var(--shadow-brutal-lg);
+  }
+  &:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+  }
+}
+
+/* Section label, e.g. [ 01 — ABOUT ] */
+@utility section-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-ink-2);
 }

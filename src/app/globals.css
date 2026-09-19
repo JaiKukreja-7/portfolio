@@ -122,3 +122,13 @@
   text-transform: uppercase;
   color: var(--color-ink-2);
 }
+
+/* ------------------------------------------------------------------
+   Custom cursor — the class is only present while the custom cursor is
+   on screen (see components/custom-cursor.tsx), so there is never a
+   moment with no cursor at all.
+   ------------------------------------------------------------------ */
+html.custom-cursor,
+html.custom-cursor * {
+  cursor: none !important;
+}

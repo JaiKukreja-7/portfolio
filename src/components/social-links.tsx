@@ -1,12 +1,12 @@
 import { site } from "@/lib/site";
-import { CodeIcon, GitHubIcon, LinkedInIcon, MailIcon } from "@/components/icons";
+import { GitHubIcon, LeetCodeIcon, LinkedInIcon, MailIcon } from "@/components/icons";
 
 // One list for Hero, Contact and Footer. `handle` is the human-readable form.
 export const socials = [
   { label: "Email", handle: site.email, href: `mailto:${site.email}`, Icon: MailIcon, accent: "bg-yellow" },
   { label: "LinkedIn", handle: "in/jai-kukreja-b06716244", href: site.socials.linkedin, Icon: LinkedInIcon, accent: "bg-sky" },
   { label: "GitHub", handle: "@JaiKukreja-7", href: site.socials.github, Icon: GitHubIcon, accent: "bg-paper" },
-  { label: "LeetCode", handle: "@jaikukreja1403", href: site.socials.leetcode, Icon: CodeIcon, accent: "bg-lime" },
+  { label: "LeetCode", handle: "@jaikukreja1403", href: site.socials.leetcode, Icon: LeetCodeIcon, accent: "bg-lime" },
 ] as const;
 
 export const externalProps = (href: string) =>

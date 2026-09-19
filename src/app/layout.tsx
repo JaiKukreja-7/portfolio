@@ -21,10 +21,31 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "700"],
 });
 
+const title = "Jai Kukreja — Full-Stack Developer";
+const description =
+  "Computer Engineering student at TSEC Mumbai building full-stack & frontend products. Open to internships.";
+
 export const metadata: Metadata = {
-  title: "Jai Kukreja — Full-Stack Developer",
-  description:
-    "Computer Engineering student building full-stack & frontend products. Open to internships.",
+  metadataBase: new URL("https://jaikukreja.vercel.app"),
+  title,
+  description,
+  authors: [{ name: "Jai Kukreja", url: "https://github.com/JaiKukreja-7" }],
+  keywords: ["Jai Kukreja", "full-stack developer", "frontend engineer", "Next.js", "React", "TSEC", "Mumbai", "internship"],
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Jai Kukreja",
+    title,
+    description,
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({

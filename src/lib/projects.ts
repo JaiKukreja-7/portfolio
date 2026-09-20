@@ -78,7 +78,10 @@ export const projects: readonly Project[] = [
     context: "Solo build",
     description:
       "AI food label scanner that rates a product's healthiness from a photo of its nutrition label.",
-    status: "in-progress",
+    links: {
+      live: "https://nutriiscan.vercel.app/",
+      github: "https://github.com/JaiKukreja-7/NutriScan",
+    },
     accent: "bg-coral",
   },
 ];

@@ -74,6 +74,11 @@ export const projects: readonly Project[] = [
       live: "https://prgi-title-verify.vercel.app/",
       github: "https://github.com/divvyesk/prgi-title-verify",
     },
+    images: [
+      { src: "/images/projects/titleguard-1.png", alt: "TitleGuard title verifier with a sample search" },
+      { src: "/images/projects/titleguard-2.png", alt: "TitleGuard clearance pipeline and conflict verdict" },
+      { src: "/images/projects/titleguard-3.png", alt: "TitleGuard similarity scoring and registry conflicts" },
+    ],
     accent: "bg-violet",
   },
   {

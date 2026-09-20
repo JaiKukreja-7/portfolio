@@ -1,6 +1,11 @@
 // Project data for the [ 03 — PROJECTS ] section.
 // Screenshots live in public/images/projects/ — swap the placeholders for real ones.
-export type ProjectImage = { src: string; alt: string };
+export type ProjectImage = {
+  src: string;
+  alt: string;
+  /** Phone captures are shown framed on the accent panel instead of cropped to 16:9. */
+  portrait?: boolean;
+};
 
 export type Project = {
   slug: string;
@@ -82,6 +87,9 @@ export const projects: readonly Project[] = [
       live: "https://nutriiscan.vercel.app/",
       github: "https://github.com/JaiKukreja-7/NutriScan",
     },
+    images: [
+      { src: "/images/projects/nutriscan-preview.png", alt: "NutriScan scan results screen", portrait: true },
+    ],
     accent: "bg-coral",
   },
 ];

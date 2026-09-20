@@ -44,6 +44,22 @@ function Media({
   if (!project.images?.length) return <InitialsPanel project={project} className={className} />;
   if (project.images.length === 1) {
     const img = project.images[0];
+    if (img.portrait) {
+      // Phone screenshot: framed and centred on the striped accent panel.
+      return (
+        <div
+          className={`relative flex aspect-video w-full items-end justify-center overflow-hidden ${project.accent} ${className}`}
+        >
+          <div
+            aria-hidden
+            className="absolute inset-0 opacity-15 [background-image:repeating-linear-gradient(135deg,var(--color-ink)_0_2px,transparent_2px_14px)]"
+          />
+          <div className="relative mt-5 h-[calc(100%-1.25rem)] w-auto aspect-[481/806] overflow-hidden border-[3px] border-b-0 border-ink bg-white shadow-brutal">
+            <Image src={img.src} alt={img.alt} fill sizes="240px" className="object-cover object-top" />
+          </div>
+        </div>
+      );
+    }
     return (
       <div className={`relative aspect-video w-full overflow-hidden bg-paper-2 ${className}`}>
         <Image src={img.src} alt={img.alt} fill sizes={sizes} className={fit === "contain" ? "object-contain" : "object-cover"} />

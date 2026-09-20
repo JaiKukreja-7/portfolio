@@ -1,9 +1,13 @@
 import { site } from "@/lib/site";
 import { GitHubIcon, LeetCodeIcon, LinkedInIcon, MailIcon } from "@/components/icons";
 
+// Gmail compose in a new tab, with the address pre-filled. (A mailto: link depends on
+// the visitor having a desktop mail app configured, which many don't.)
+const gmailCompose = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(site.email)}&su=${encodeURIComponent("Hi Jai")}`;
+
 // One list for Hero, Contact and Footer. `handle` is the human-readable form.
 export const socials = [
-  { label: "Email", handle: site.email, href: `mailto:${site.email}`, Icon: MailIcon, accent: "bg-yellow" },
+  { label: "Email", handle: site.email, href: gmailCompose, Icon: MailIcon, accent: "bg-yellow" },
   { label: "LinkedIn", handle: "in/jai-kukreja-b06716244", href: site.socials.linkedin, Icon: LinkedInIcon, accent: "bg-sky" },
   { label: "GitHub", handle: "@JaiKukreja-7", href: site.socials.github, Icon: GitHubIcon, accent: "bg-paper" },
   { label: "LeetCode", handle: "@jaikukreja1403", href: site.socials.leetcode, Icon: LeetCodeIcon, accent: "bg-lime" },

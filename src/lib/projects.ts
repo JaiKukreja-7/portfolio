@@ -37,6 +37,10 @@ export const projects: readonly Project[] = [
       { src: "/images/projects/mockprep-2.png", alt: "MockPrep live interview session" },
       { src: "/images/projects/mockprep-3.png", alt: "MockPrep performance analytics" },
     ],
+    links: {
+      live: "https://mockprep-vf.vercel.app/sign-in",
+      github: "https://github.com/JaiKukreja-7/MockPrep",
+    },
     accent: "bg-yellow",
     featured: true,
   },
